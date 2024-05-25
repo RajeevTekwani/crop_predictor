@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            CROP TYPE PREDICTOR
+        </title>
+    </head>
+    <body>
+        <h2>
+            INPUT PAGE !!
+        </h2>
+
+        <form action="{{ url_for('prediction') }}" method="post">     
+            <label for="">Enter Nitrogen : </label>
+            <input type="text" required name="N">
+            <br><br>
+            <label for="">Enter Phosphorus : </label>
+            <input type="text" required name="P">
+            <br><br>
+            <label for="">Enter Pottasium : </label>
+            <input type="text" required name="K">
+            <br><br>
+            <label for="">Enter temperature : </label>
+            <input type="text" required name="T">
+            <br><br>
+            <label for="">Enter humidity : </label>
+            <input type="text" required name="H">
+            <br><br>
+            <label for="">Enter ph : </label>
+            <input type="text" required name="ph">
+            <br><br>
+            <label for="">Enter rainfall : </label>
+            <input type="text" required name="rain">
+            <br><br>
+
+            <button type="submit">SUBMIT YOUR DATA</button>
+        </form>
